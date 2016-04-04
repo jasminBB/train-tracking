@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 		watch: {
 			files: [
 				"public/*.html",
-				"public/components/*"
+				"public/components/**"
 			],
 			tasks: ['default']
 		},
@@ -29,10 +29,6 @@ module.exports = function(grunt) {
 				src: ['node_modules/angular-material/angular-material.css'],
 				dest: 'public/assets/css/libcss.css'
 			},
-			ucss: {
-				src: ['public/components/sass/*'],
-				dest: 'public/assets/css/ucss.css'
-			},
 			ujs: {
 				src: [
 					'public/components/directives/*',
@@ -45,8 +41,11 @@ module.exports = function(grunt) {
 
 		sass: {
 			dist: {
+				options: {
+					style: 'expanded'
+				},
 				files: {
-					'public/assets/css/ucss.css': 'public/components/sass/*.scss'
+					'public/assets/css/ucss.css': 'public/components/sass/layout.scss'
 				}
 			}
 		},
@@ -62,11 +61,12 @@ module.exports = function(grunt) {
 		}
 
 	});
+
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('default', ['sass', 'concat', 'connect', 'watch']);
+	grunt.registerTask('default', ['concat', 'sass', 'connect', 'watch']);
 
 };
