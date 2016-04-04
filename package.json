@@ -1,0 +1,37 @@
+{
+  "name": "tracking-system",
+  "version": "1.0.0",
+  "description": "Real-time tracking system of trains.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Realtimetracking system",
+    "Train tracking system",
+    "Tracking train",
+    "Railway tracking system"
+  ],
+  "author": "Jasmin Besic",
+  "license": "ISC",
+  "private": "true",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-animate": "^1.5.3",
+    "angular-aria": "^1.5.3",
+    "angular-material": "^1.0.7",
+    "angular-messages": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "jquery": "^2.2.2"
+  }
+}

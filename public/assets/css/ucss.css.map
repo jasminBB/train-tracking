@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACJ,gBAAgB,EAAE,IAAI",
+"sources": ["../../components/sass/layout.scss"],
+"names": [],
+"file": "ucss.css"
+}
