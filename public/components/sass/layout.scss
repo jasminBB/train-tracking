@@ -1,4 +1,6 @@
-[ng-cloak] {
+body {
+
+	font-size: 16px;
 
 	.splash {
 		background-color: #000;
@@ -6,6 +8,38 @@
 		height: 100%;
 		position: fixed;
 		width: 100%;
+
+		div {
+		    left: 50%;
+		    position: absolute;
+		    top: 50%;
+		    transform: translate(-50%, -50%);
+		    width: 60%;
+
+			img {
+				height: auto;
+				max-width: 100%;
+				width: 100%;
+			}
+
+			h1 {
+				color: #fff;
+				font-size: 4.236em;
+				text-align: center;
+			}
+
+			h5 {
+				color: #fff;
+				text-align: center;
+			}
+
+		    button {
+		        display: block;
+			    height: 48px;
+			    margin: 0 auto;
+			    width: 200px;
+		    }
+		}
 
 	}
 }
