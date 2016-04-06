@@ -1,15 +1,17 @@
 body {
-
 	font-size: 16px;
+}
 
-	.splash {
-		background-color: #000;
-		display: block !important;
-		height: 100%;
-		position: fixed;
-		width: 100%;
+.splash {
+	background-color: #000;
+	display: block !important;
+	height: 100%;
+	position: fixed;
+	width: 100%;
 
-		div {
+	div {
+
+		&:first-child {
 		    left: 50%;
 		    position: absolute;
 		    top: 50%;
@@ -33,14 +35,50 @@ body {
 				color: #fff;
 				text-align: center;
 			}
-
-		    button {
-		        display: block;
-			    height: 48px;
-			    margin: 0 auto;
-			    width: 200px;
-		    }
 		}
 
+		&:last-child {
+			text-align: center;
+
+			.btn-group.btn-inline a {
+				color: #fff;
+		        display: inline-block;
+		        text-decoration: none;
+
+			    &:first-child {
+			    	margin-right: 5px;
+			    }
+
+			    &:last-child {
+			    	margin-left: 5px;
+			    }
+
+			    &:hover {
+			    	text-decoration: underline;
+			    }
+		    }
+		}
+	}
+}
+
+.main-navigation {
+	padding: 5%;
+
+	.item-wrapper {
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		a {
+			display: block;
+			padding: 15px 0;
+			text-align: center;
+		}
+
+		p {
+			font-size: 0.707em;
+		}
 	}
 }
